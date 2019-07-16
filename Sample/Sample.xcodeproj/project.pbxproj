@@ -14,6 +14,8 @@
 		5764344A22DE2002009AF7C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5764344822DE2002009AF7C5 /* LaunchScreen.storyboard */; };
 		5764345522DE2002009AF7C5 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764345422DE2002009AF7C5 /* SampleTests.swift */; };
 		5764346022DE2002009AF7C5 /* SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5764345F22DE2002009AF7C5 /* SampleUITests.swift */; };
+		57C92AAB22DE36F4008334F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5764344322DE2000009AF7C5 /* Main.storyboard */; };
+		57C92AAC22DE36F5008334F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5764344322DE2000009AF7C5 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,7 @@
 		5764345B22DE2002009AF7C5 /* SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5764345F22DE2002009AF7C5 /* SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleUITests.swift; sourceTree = "<group>"; };
 		5764346122DE2002009AF7C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5764346E22DE33A6009AF7C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C92AAC22DE36F5008334F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C92AAB22DE36F4008334F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +302,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5764344422DE2000009AF7C5 /* Base */,
+				5764346E22DE33A6009AF7C5 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
