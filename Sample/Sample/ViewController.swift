@@ -6,7 +6,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonpressed(_ sender: UIButton) {
       _=sender.title(for: .normal)
-        Ulabel.text="You clicked \(title)) button "
+        Ulabel.text="You clicked \(sender.titleLabel!.text!) button "
     }
 }
 
