@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dM1-ps-hg0">
-                                <rect key="frame" x="48" y="184" width="325" height="29"/>
+                                <rect key="frame" x="44.426851868185963" y="232" width="324.99999999999994" height="29.000000000000014"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -38,20 +38,40 @@
                                 <rect key="frame" x="129" y="388" width="155" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Coding Blocks"/>
+                                <state key="normal" title="Coding Blocks">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <action selector="buttonpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hy-dI-qxF"/>
                                 </connections>
                             </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w54-yb-yc2">
+                                <rect key="frame" x="-1" y="65" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits" smartInsertDeleteType="yes" textContentType="name"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dTU-FZ-dsg"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="Ulabel" destination="dM1-ps-hg0" id="0V9-nC-Rtt"/>
+                        <outlet property="searchDisplayController" destination="BGm-Yi-u88" id="37T-UH-McZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="BGm-Yi-u88">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="zCk-EG-dZP"/>
+                        <outlet property="searchBar" destination="w54-yb-yc2" id="OP1-0p-UhL"/>
+                        <outlet property="searchContentsController" destination="BYZ-38-t0r" id="CWr-51-6HZ"/>
+                        <outlet property="searchResultsDataSource" destination="BYZ-38-t0r" id="Jqu-6O-8Gd"/>
+                        <outlet property="searchResultsDelegate" destination="BYZ-38-t0r" id="NUO-TE-Fmn"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
         </scene>
